@@ -5,17 +5,17 @@ import { type } from "os";
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
-        required: true,
+        required: false,
         unique: true,
     },
     email: {
         type: String,
-        required: true,
+        required: false,
         unique: true,
     },
     password: {
         type: String,
-        required: true,
+        required: false,
     },
     profilePicture: {
         type: String,
@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
     },
     isAdmin: {
         type: Boolean,
-        default: false,
+        default: true,
     }
 
     }, {timestamps: true}
