@@ -58,7 +58,7 @@ export default function CommentSection({ postId }) {
 
   const handleLike = async (commentId) => {
     try {
-      if (!currentUser) {
+      if (currentUser) {
         navigate('/sign-in');
         return;
       }
@@ -95,7 +95,7 @@ export default function CommentSection({ postId }) {
   const handleDelete = async (commentId) => {
     setShowModal(false);
     try {
-      if (!currentUser) {
+      if (currentUser) {
         navigate('/sign-in');
         return;
       }
