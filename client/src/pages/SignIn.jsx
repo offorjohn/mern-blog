@@ -55,8 +55,9 @@ export default function SignIn() {
             PORTFOLIO BLOG
           </Link>
           <p className="text-sm mt-5">
-            This is one my latest portfolio projects. Please sign in with your email and password
-            or  PREFERABLY with Google.
+            This is one my latest portfolio projects. Please sign in with mock email and password
+               i Will handle this in my next projects
+        
           </p>
 
         </div>
